@@ -20,6 +20,11 @@ public class DetailActivity extends AppCompatActivity {
   private TextView moviePosterRating;
   private TextView moviePosterDescription;
 
+  private String imagePath;
+  private String title;
+  private String rating;
+  private String description;
+
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -29,8 +34,13 @@ public class DetailActivity extends AppCompatActivity {
     moviePosterImage.setImageResource(R.drawable.wonder_woman_poster);
 
     moviePosterTitle = (TextView) findViewById(R.id.tv_movie_title);
+    moviePosterTitle.setText("Movie Title");
+
     moviePosterRating = (TextView) findViewById(R.id.tv_movie_rating);
+    moviePosterRating.setText("Movie Rating");
+
     moviePosterDescription = (TextView) findViewById(R.id.tv_movie_description);
+    moviePosterDescription.setText("This will be the description of the movie plot.");
 
     Intent intent = getIntent();
     if(intent == null){

@@ -21,6 +21,10 @@
         <action android:name="android.intent.action.MAIN"/>
       </intent-filter>
     </activity>
+    <activity
+      android:label="Settings"
+      android:name=".SettingsActivity">
+    </activity>
   </application>
 
 </manifest>

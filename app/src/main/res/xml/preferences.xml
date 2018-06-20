@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <PreferenceCategory android:title="Settings">
+
+    <ListPreference android:key="@string/sp_key_popularity"
+      android:title="By Popularity"
+      android:summary="Filter By Popularity"/>
+
+    <ListPreference android:key="@string/sp_key_rating"
+      android:title="By Popularity"
+      android:summary="Filter By Popularity"/>
+
+
+
+  </PreferenceCategory>
+
+</PreferenceScreen>
